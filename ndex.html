@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span id="cursor">X</span>
+    <div class="overlay">
+        <div class="shadow"></div>
+        <div class="shadow2"></div>
+</div>
+
+    <div class="container">
+      <h1 id="print"></h1>
+        <div class="game">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <div class="line" id="line4"></div>
+            <div class="line" id="line5"></div>
+            <div class="line" id="line6"></div>
+            <div class="line" id="line7"></div>
+            <div class="line" id="line8"></div>
+            <div class="row">
+                <input type="text" class="b1" readonly onclick="func1() ;func()">
+                <input type="text" class="b2" readonly onclick="func2() ;func()">
+                <input type="text" class="b3" readonly onclick="func3() ;func()">
+            </div>
+            <div class="row">
+                <input type="text" class="b4" readonly onclick="func4() ;func()">
+                <input type="text" class="b5" readonly onclick="func5() ;func()">
+                <input type="text" class="b6" readonly onclick="func6() ;func()">
+            </div>
+            <div class="row">
+
+                <input type="text" class="b7" readonly onclick="func7() ;func()">
+                <input type="text" class="b8" readonly onclick="func8() ;func()">
+                <input type="text" class="b9" readonly onclick="func9() ;func()">
+            </div>
+        </div>
+        <div class="players">
+            <div class="xplayer"><i class='bx bx-user'></i><span class="turn1">Player X turn</span></div>
+            <div class="oplayer"><span class="turn2" >Player O Turn</span><i class='bx bx-user'></i></div>
+        </div>
+        <i class='bx bx-reset' id="reset"></i>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
